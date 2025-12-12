@@ -7,7 +7,9 @@
 **2.1 USB System Description**
 
 • USB interconnect
+
 • USB devices
+
 • USB host
 
 **USB interconnect: **
