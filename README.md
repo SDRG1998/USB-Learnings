@@ -6,6 +6,10 @@ Physical Layer, Link Layer, Protocol Layer
 
 1.What is USB?
 
+**Endpoint**
+
+
+
 **2. Architectural Overview**
 
 ![image alt](https://github.com/SDRG1998/USB-Learnings/blob/561ec4acf7b59759d5da3bde6739814c7c76f808/image/Screenshot%202025-12-12%20193559.png)
