@@ -213,3 +213,4 @@ Underneath it has multi-layer as following
 
     • USB Host Controller (Host Side Bus Interface): The hardware and software that allows USB devices to be attached to a host.
 
+![image alt](https://github.com/SDRG1998/USB-Learnings/blob/769af19b493fb8f1d1c06ee423db6ecf3289b62f/image/Usb_data_flow.png)
