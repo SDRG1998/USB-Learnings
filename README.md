@@ -8,8 +8,40 @@ Physical Layer, Link Layer, Protocol Layer
 
 **Endpoint**
 
+    • An endpoint is a unidirectional data channel inside the USB device.
 
+    • It is implemented as a buffer plus control logic and is identified by:
 
+        • Endpoint number (0–N)
+
+        • Direction (IN = device→host, OUT = host→device)
+
+        • Type (control, bulk, interrupt, isochronous)
+
+     • Endpoints exist only in the device hardware/firmware, , and are described to the host in the USB descriptors
+
+     • Each endpoint is a source or sink for data but cannot start transfers on its own; it only responds when the host talks to it.
+
+**Pipe**
+
+    A pipe is the host-side logical connection to an endpoint
+
+    When the host enumerates a device and reads its descriptors, it creates a pipe for each endpoint it wants to use
+
+    The pipe stores:
+
+        Which device and endpoint address it targets
+
+        Direction and transfer type
+
+        Max packet size, interval, and other parameters
+
+        Queues of pending transfers and completion statu
+
+ endpoint = device’s logical channel, pipe = host’s handle for talking to that channel.
+
+![image alt](https://github.com/SDRG1998/USB-Learnings/blob/1ff27dbf9f712d45b5fad7ec4fe4d6212ba3549f/image/EP_Pipe.png)        
+    
 **2. Architectural Overview**
 
 ![image alt](https://github.com/SDRG1998/USB-Learnings/blob/561ec4acf7b59759d5da3bde6739814c7c76f808/image/Screenshot%202025-12-12%20193559.png)
